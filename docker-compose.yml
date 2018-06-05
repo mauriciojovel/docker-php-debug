@@ -4,8 +4,6 @@ services:
     build: Docker/php
     volumes:
       - ./src:/var/www/html
-    environment:
-       XDEBUG_CONFIG: remote_host=${IP}
   nginx:
     build: Docker/nginx
     links:
